@@ -4,15 +4,15 @@
 **It does not store a password database.**
 It is intended to be used for website accounts.
 
-Everyone know good practices for passwords on the web:
+Everyone knows good practices for passwords on the web:
 - Use a combinaison of letters (upper and lower case), digits, and symbols;
 - Have a long-enough password;
 - Use one password per website;
 - Change passwords often;
-- <One more another annoying advice that you won't follow>;
+- _One more another annoying advice that you won't follow_;
 - etc...
 
-This tool should help to fulfill at least the fourth first advices listed
+This tool should help to fulfil at least the fourth first advices listed
 above.
 
 ## How that works
@@ -56,6 +56,15 @@ So, write some numbers there, and keep it secret.
 Maybe. I don't know if it is important, actually...
 But I will not commit my *own* version of this file, so you will have
 to generate it.
+
+If you don't want to edit the file by yourself, feel free to run an automatic
+generator: [`dprpwg-gen.py`](scripts/dprpwg-gen.py). Note that is requires
+python3. Depending on your distribution, you may need to slightly alter the
+call to the generator:
+
+```bash
+./scripts/dprpwg-gen.py --output src/dprpwg_config.h
+```
 
 ### Now, proper building
 
